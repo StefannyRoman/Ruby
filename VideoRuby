@@ -18,6 +18,12 @@ Operaciones -> Operaciones /Operaciones matematicas
   num.round -> redondear al mas cercano
   num.ceil() -> redondear al numero siguiente
   num.floor() -> redondear al numero mas bajo
-Inputs -> Configurar 
-  - Se debe ingresar input por la terminal
+Inputs -> Configurar editor de texto
+  - Se debe ingresar input por la terminal con el metodo -> gets
+  puts "Enter your name: "
+  name = gets
+  puts ("Hello " + name)
+  - Si se pone a imprimir otro texto despues de name se imprimira en otra linea para mitigarlo usamos .chomp()
+  name = gets.chomp() -> Asi al imprimir otro texto despues de ejecurara en la misma linea
+  puts ("Hello " + name + " you area cool! ") 
   
