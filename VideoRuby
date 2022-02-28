@@ -123,6 +123,8 @@ Execepciones/ Etiquetas de rescate
     puts e
   end
  
-  
+Clase
+  -Para crear una variable  -> :variable
+  -Para llamar a una variable ->  @variable
 
  
