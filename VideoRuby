@@ -1,0 +1,23 @@
+'''
+Variable -> No tipadas, no indentadas
+  nula: flaws=nil
+Imprimir -> Se imprime con puts
+  phrase = "Giraffe Academy"
+  puts phrase.upcase() -> TODO MAYUSCULA -> GIRAFFE ACADEMY
+  puts phrase.downcase() -> TODO MINUSCULA -> giraffe academy
+  phrase = "   Giraffe Academy   "
+  puts phrase.strip() -> QUITAR ESPACIOS DE ATRAS Y ADELANTE DE LA FRASE
+  puts phrase.length() -> CANTIDAD DE CARACTERES
+  puts phrase.include? "Academy" -> CONTIENE ESA CADENA LA FRASE
+  puts phrase.index("G") -> DEVUELVE EL INDICE DONDE SE ENCUENTRE EL CARACTER
+Operaciones -> Operaciones /Operaciones matematicas
+  2**3 -> potencia
+  num = 2
+  puts "el numero es" + num.to_s -> convertir un numero en una cadena
+  num.abs() -> valor absoluto
+  num.round -> redondear al mas cercano
+  num.ceil() -> redondear al numero siguiente
+  num.floor() -> redondear al numero mas bajo
+Inputs -> Configurar 
+  - Se debe ingresar input por la terminal
+  
