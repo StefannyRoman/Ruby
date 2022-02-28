@@ -14,6 +14,8 @@ Operaciones -> Operaciones /Operaciones matematicas
   2**3 -> potencia
   num = 2
   puts "el numero es" + num.to_s -> convertir un numero en una cadena
+  puts num.to_i + num.to_i -> convertir a entero
+  puts num.to_f + num.to_f -> convertir a float
   num.abs() -> valor absoluto
   num.round -> redondear al mas cercano
   num.ceil() -> redondear al numero siguiente
@@ -26,4 +28,74 @@ Inputs -> Configurar editor de texto
   - Si se pone a imprimir otro texto despues de name se imprimira en otra linea para mitigarlo usamos .chomp()
   name = gets.chomp() -> Asi al imprimir otro texto despues de ejecurara en la misma linea
   puts ("Hello " + name + " you area cool! ") 
+  num = gets.chomp().to_f -> Pedir numero al usurio y de una vez convertirlo para poder operar
+Arreglos
+  friends = Array["Kevin","Karen","Oscar"]
+  friends.reverse() -> Invierten los elementos
+  friends.sort() -> Ordena alfabeticamente
+Hash -> Clave, valor
+  states={
+    :Pennsylvania="PA",
+    "New York"="NY",
+    "Oregon"="OR"
+  }
+ puts states["Oregon"] -> poner la clave para que imprima el valor OR
+ puts states[:Pennsylvania] -> PA
+Methods -> se pueden devolver varios valores de un metodo
+  Sin parametros
+  def sayhi
+  end
+  sayhi
+  Con parametros
+  def sayhi(name)
+    puts name
+    return name
+  end
+  sayhi("Mike")
+Sentencia if
+  ismale=true
+  istall=true
+  if ismale and is tall -> and-or
+    puts "You are male"
+  elsif !istall
+    pust "You are nor tall"
+  else 
+    pust "You are nor male"
+  end
+Sentencia case
+  case day
+    when "Mon"
+    day_name="Monday"
+    when "Tue"
+    day_name="Tuesday"
+    else
+    day_name="Invalid"
+  end
+while loop->
+  index=1
+  while index<=5
+    puts index
+    index+=1
+  end
+for loop->
+  for element in friends
+    puts element
+  end
+  for each
+    friends.each do |friend|
+      puts friend
+    end
+  for index in 0..5
+    puts index
+  end
+  6.times do |index|
+    puts index
+  end
+ 
+
   
+  
+ 
+  
+
+ 
