@@ -91,10 +91,37 @@ for loop->
   6.times do |index|
     puts index
   end
- 
-
-  
-  
+COMENTARIOS
+  -Los comentarios son con #asdds o 
+  #comentario de linea
+  -> comentario de bloque
+  =begin
+  adededans
+  ahbsxhbs
+  =end
+Abrir un archivo
+  file.open("employees.txt","r") do |file|
+    puts file.read() # leer el archivo
+    puts file.read().indlude? "Jim"
+    puts file.readline() #primea linea
+    puts file.readline() #segunda linea
+    puts file.readchar() #primer caracter
+    puts file.readlines()[2] #linea especifica
+    puts file.close() #cerrar archivo 
+  end
+Execepciones/ Etiquetas de rescate
+  begin
+    lucky=nums["dog"]
+    num = 10/0
+  rescue ZeroDiisionError
+    puts "Division by zero error"
+    
+  rescue TypeError  
+    puts "Wrong Type"
+  #Otra forma
+   rescue TypeError => e
+    puts e
+  end
  
   
 
